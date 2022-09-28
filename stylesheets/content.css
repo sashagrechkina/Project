@@ -60,6 +60,7 @@
  }
 
   .box5 {
+
     background-color: #D4FFA9;
     grid-area: box5; }
 
@@ -350,12 +351,13 @@ animation-delay: 3s;
 .im10{
   position: absolute;
   height: 65vw;
-  padding-left: 4vw;
+  right: 25vw;
   padding-top: 10vw;
 }
 .im11{
   position: absolute;
   overflow: hidden;
+  z-index: 1;
   height: 38vw;
   padding-left: 3vw;
   padding-top: 10vw;
@@ -393,15 +395,14 @@ animation-delay: 3s;
 }
 .im13{
   overflow: hidden;
-  position: relative;
-padding-top: 41vw;
+  position: absolute;
+padding-top: 39vw;
 height: 23vw;
-animation: im13 3s linear infinite;
+/*animation: im13 3s linear infinite;
 	-webkit-animation: im13 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate forwards;
-	        animation: im13 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate forwards;
+	        animation: im13 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate forwards;*/
 }
 
-}
 @-webkit-keyframes im13 {
   0% {
     -webkit-transform: translateY(0);
@@ -508,9 +509,9 @@ height: 60vw;
   padding-top: 15vw;
   padding-left: 1vw;
   height: 30vw;
-  animation: im21 3s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0s infinite normal none;
+  animation: im21 5s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0s infinite normal none;
 }
-@keyframes im21 {
+/@keyframes im21 {
   0%,
   100% {
     transform: translateX(0%);
@@ -539,4 +540,34 @@ height: 60vw;
 }
 .n1{
 
+}
+.move-area{/*normally use body*/
+  width: 100vw;
+  height: 100vh;
+  padding: 10% 19%;
+  top: 15vw;
+}
+.container {
+  width: 100%;
+
+}
+.eye {
+  position: relative;
+  display: inline-block;
+  margin: 3.5vw;
+  border-radius: 50%;
+  height: 8vw;
+  width: 8vw;
+  top: 40vw;
+  background: white;
+}
+.eye:after { /*pupil*/
+  position: absolute;
+  bottom: 0.885vw;
+  right: 0.521vw;
+  width: 4vw;
+  height: 4vw;
+  background: #000;
+  border-radius: 50%;
+  content: " ";
 }
